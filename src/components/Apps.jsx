@@ -1,13 +1,19 @@
 import React from 'react'
 import App from '../components/App'
+import { styled } from 'styled-components'
 
+const Container = styled.div`
+  display : flex;
+  flex-wrap: wrap;
+  justify-content :center;
+`
 const Apps = ({props}) => {
   return (
-    <div>
+    <Container>
         {
             props.map((x)=> <App key={x._id} app={x}/>)
         }
-    </div>
+    </Container>
   )
 }
 
