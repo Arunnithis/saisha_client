@@ -41,7 +41,6 @@ const Button = styled.button`
 const Appointments = () => {
     const[apps , setApps] = useState(null)
     const[isFetched , setisFetched] = useState(false)
-    const[isFilter , setisFilter] = useState(false)
     const[filter , setFilter] = useState("")
 
 
@@ -62,7 +61,6 @@ const Appointments = () => {
     <Container>
       <Filter onSubmit={handleSubmit}>
         <Query type='date' onChange={e => setFilter(e.target.value)} />
-        <Button >Filter</Button>
       </Filter>
         {
           isFetched && (

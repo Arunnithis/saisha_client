@@ -21,8 +21,8 @@ function App() {
     <Container>
       <Wrapper>
         {/* <PostAppointment /> */}
-        <Appointments />
-        {/* <Update /> */}
+        {/* <Appointments /> */}
+        <Update />
       </Wrapper>
     </Container>
   );
